@@ -7,7 +7,7 @@
 
 -- VARIABLES
 local logo="place base 64 image data here"
-local picture="place base 65 image data here"
+local product="place base 65 image data here"
 local description = [[
 <hr/>
 <center><h2>Title</h2></center>
@@ -337,15 +337,6 @@ function script_properties()
 
 	local create_be_back_scene_btn = obs.obs_properties_add_button(properties, "create_be_back_scene", "Import Be Right Back Scene", create_be_right_back_scene)
 	obs.obs_property_set_long_description(create_be_back_scene_btn, "Insert the Be Right Back scene to your OBS Session.")
-
-	local create_later_scene_btn = obs.obs_properties_add_button(properties, "create_later_scene", "Import Thanks For Watching Scene", create_thanks_for_watching_scene)
-	obs.obs_property_set_long_description(create_later_scene_btn, "Insert the Thanks For Watching scene to your OBS Session.")
-
-	local create_game_stack_scene_btn = obs.obs_properties_add_button(properties, "create_game_stack_scene", "Import Game Scene With Support Stack", create_stack_scene)
-	obs.obs_property_set_long_description(create_game_stack_scene_btn, "Insert the Game with Support Stack scene to your OBS Session.")
-
-	local create_game_bar_scene_btn = obs.obs_properties_add_button(properties, "create_game_bar_scene", "Import Game Scene With Support Bar", create_bar_scene)
-	obs.obs_property_set_long_description(create_game_bar_scene_btn, "Insert the Game with Support Bar scene to your OBS Session.")
 
 	return properties
 
